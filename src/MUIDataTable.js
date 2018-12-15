@@ -165,7 +165,7 @@ class MUIDataTable extends React.Component {
     }
 
     return MUIDataTable.fallbackComparator;
-  }
+  };
 
   /*
    * React currently does not support deep merge for defaultProps. Objects are overwritten
