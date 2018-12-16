@@ -4,7 +4,9 @@ import TableCell from "@material-ui/core/TableCell";
 import { withStyles } from "@material-ui/core/styles";
 
 const defaultBodyCellStyles = theme => ({
-  root: {},
+  root: {
+    backgroundColor: "#FFF",
+  },
   cellHide: {
     display: "none",
   },
@@ -42,6 +44,7 @@ class MUIDataTableBodyCell extends React.Component {
 
     return [
       <TableCell
+        contentEditable={true}
         key={1}
         className={classNames({
           [classes.root]: true,
@@ -51,6 +54,7 @@ class MUIDataTableBodyCell extends React.Component {
         {columnHeader}
       </TableCell>,
       <TableCell
+        contentEditable={true}
         key={2}
         onClick={this.handleClick}
         className={classNames({
